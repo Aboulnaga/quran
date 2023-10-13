@@ -23,7 +23,7 @@ export const Header = ({
     <div className="header-container">
       <header>
         <h1>
-          <a href="./index.html">Quran</a>
+          <a href="./index.html">Qurany</a>
         </h1>
 
         <nav>
