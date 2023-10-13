@@ -1,0 +1,58 @@
+.header-container {
+  padding: 0.5rem 1rem;
+  box-shadow: 1px 1px 7px rgba($color: #4c4c4c, $alpha: 0.35);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (width < 950px) {
+  nav {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+  }
+}
+
+.play-list,
+.library,
+.fav {
+  pointer-events: all;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: 2px solid black;
+  padding: 0.35rem;
+}
+
+.play-list:hover,
+.library:hover,
+.fav:hover {
+  background-color: black;
+  color: white;
+}
+
+.on-press-button-back-ground {
+  // change by user from ui
+  background-color: black;
+  color: white;
+}
+
+.library__icon,
+.play-list__icon,
+.fav__icon {
+  pointer-events: none;
+}
+
+.fav {
+  position: relative;
+}

@@ -1,0 +1,60 @@
+.swra-add-to-play-list,
+.swra-remove-from-play-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 0.2rem;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.swra-add-to-play-list {
+  border: 1px solid black;
+}
+
+// You Can Change remove icon css settings from _favlistswar css
+.swra-remove-from-play-list {
+  border: 1px solid rgb(199, 199, 199);
+}
+
+.swra-add-to-play-list__icon,
+.swra-remove-from-play-list__icon {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+// .swra-add-to-fav-list__icon {
+
+// }
+.swra-remove-from-play-list__icon {
+  color: rgb(199, 199, 199);
+}
+
+/*
+.swra-add-to-play-list {
+  border: 1px solid black;
+  padding: 0.5rem;
+  pointer-events: all;
+  cursor: pointer;
+}
+.swra-add-to-play-list__icon {
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+
+// You Can Change remove icon css settings from _favlistswar css
+.swra-remove-from-play-list {
+  border: 1px solid rgb(199, 199, 199);
+  padding: 0.5rem;
+  pointer-events: all;
+  cursor: pointer;
+}
+.swra-remove-from-play-list__icon {
+  color: rgb(199, 199, 199);
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+
+*/

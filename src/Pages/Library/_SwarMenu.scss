@@ -1,0 +1,56 @@
+.swar-menu {
+  padding: 1rem 0.5rem 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.swra-det {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dotted rgb(221, 221, 221);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+
+.swra-det:hover {
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(208, 208, 208);
+}
+
+.swra-det__wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+.swra-play-icon {
+}
+
+.swra-play-icon__icon {
+  font-size: 2rem;
+}
+
+.swra-info {
+  .swra-ar {
+    font-size: 0.8rem;
+    color: rgb(160, 160, 160);
+  }
+}
+
+.swra-det__controles {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-swra-in-player {
+  border: 1px solid rgb(57, 57, 57);
+
+  &:hover {
+    border: 1px solid rgb(21, 21, 21);
+  }
+}

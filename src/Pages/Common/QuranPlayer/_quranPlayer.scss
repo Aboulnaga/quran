@@ -1,0 +1,70 @@
+.quran-player {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (width < 768px) {
+  .quran-player {
+    width: 80%;
+  }
+}
+@media (width < 950px) {
+  .quran-player {
+    width: 70%;
+  }
+}
+
+.quran-player_play-controls {
+  display: flex;
+  justify-content: space-around;
+}
+.quran-player_time-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quran-player_time-controls_slider {
+  flex: 1;
+}
+
+.quran-player_time-controls_slider input {
+  width: 100%;
+}
+
+.quran-player_time-controls_slider,
+.quran-player_time-controls_start-time,
+.quran-player_time-controls_end-time {
+  border-bottom: 1px dotted rgb(219, 219, 219);
+
+  padding: 0.5rem 1rem;
+}
+
+// @media (width < 768px) {
+//   .quran-info_info {
+//     position: relative;
+//     z-index: -2;
+//   }
+// }
+
+.quran-player_play-controls_play-btn,
+.quran-player_play-controls_skip-bk,
+.quran-player_play-controls_skip-fr {
+  cursor: pointer;
+}
+
+.paly-btn,
+.skip-bk-btn,
+.skip-fr-btn {
+  pointer-events: none;
+}
+
+.quran-player_play-controls_play-btn,
+.quran-player_play-controls_skip-bk,
+.quran-player_play-controls_skip-fr {
+  border: 1px dotted rgb(219, 219, 219);
+  padding: 1rem;
+}

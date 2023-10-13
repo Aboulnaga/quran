@@ -1,0 +1,119 @@
+.quran-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quran-info_img {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: black;
+}
+.quran-info_img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+@media (width < 1100px) {
+  .quran-info_img {
+    width: 40%;
+  }
+}
+@media (width < 900px) {
+  .quran-info_img {
+    width: 55%;
+  }
+}
+@media (width < 768px) {
+  .quran-info_img {
+    width: 60%;
+  }
+}
+
+.quran-info_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.quran-info_info__nav {
+  font-size: 0.75rem;
+  display: flex;
+}
+
+.quran-info__settings {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  width: 24px;
+  height: 24px;
+}
+
+.quran-info__settings__rest-btn {
+  pointer-events: none;
+}
+
+.quran-info__settings-reset-window {
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  transform: translatey(-100%);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+@media (width < 900px) {
+  .quran-info__settings-reset-window {
+    flex-direction: column;
+  }
+}
+
+.show__quran-info__settings-reset-window {
+  transform: translatey(0);
+  opacity: 1;
+}
+
+.quran-info__settings-reset-window__data {
+  border: 1px dotted rgb(219, 219, 219);
+  box-shadow: 1px 2px 7px rgba($color: #000000, $alpha: 0.3);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.quran-info__settings-reset-window__close-button {
+  cursor: pointer;
+  pointer-events: all;
+  padding: 1rem;
+}
+
+.quran-info__settings-reset-window__close-button h1 {
+  pointer-events: none;
+}
+
+.quran-info__settings-reset-window__data button {
+  background-color: red;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  color: white;
+}

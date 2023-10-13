@@ -1,0 +1,34 @@
+.swra-add-to-fav-list,
+.swra-remove-from-fav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 0.2rem;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.swra-add-to-fav-list {
+  border: 1px solid black;
+}
+
+// You Can Change remove icon css settings from _favlistswar css
+.swra-remove-from-fav-list {
+  border: 1px solid rgb(199, 199, 199);
+}
+
+.swra-add-to-fav-list__icon,
+.swra-remove-from-fav-list__icon {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+// .swra-add-to-fav-list__icon {
+//   font-size: 1.5rem;
+//   color: red;
+// }
+.swra-remove-from-fav-list__icon {
+  color: rgb(199, 199, 199);
+}
